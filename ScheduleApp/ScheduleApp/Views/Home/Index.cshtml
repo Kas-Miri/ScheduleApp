@@ -1,0 +1,9 @@
+﻿@model List<Schedule>;
+
+@foreach (var item in Model)
+{
+    <div>
+        <span>@item.Discipline.Name</span>
+        <span>@item.TimeBegin.Name - @item.TimeEnd.Name</span>
+    </div>      
+}
